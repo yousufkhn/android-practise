@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/dark"
+    android:orientation="vertical"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_weight="1"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:scrollbars="none"
+        >
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:padding="16dp"
+            android:orientation="horizontal"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/calculatorCard"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="28sp"
+                app:cardBackgroundColor="@color/darkCard"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageButton
+                        android:id="@+id/calcButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/calclogo"
+                        android:scaleType="fitCenter"
+                        android:clickable="false"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/calculator"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:paddingTop="8dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pizzaCard"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="28sp"
+                app:cardBackgroundColor="@color/darkCard"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageButton
+                        android:id="@+id/pizzaButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/pizzalogo"
+                        android:scaleType="fitCenter"
+                        android:clickable="false"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/pizzaDelivery"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:paddingTop="8dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/buyFlowerCard"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="28sp"
+                app:cardBackgroundColor="@color/darkCard"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/flowerlogo"
+                        android:scaleType="fitXY"
+                        android:clickable="false"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/buyFlowers"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:paddingTop="8dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/spinnerCard"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="28sp"
+                app:cardBackgroundColor="@color/darkCard"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/spinner"
+                        android:scaleType="fitCenter"
+                        android:clickable="false"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Spinner"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:paddingTop="8dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ca1Card"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="28sp"
+                app:cardBackgroundColor="@color/darkCard"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/ca1logo"
+                        android:scaleType="fitCenter"
+                        android:clickable="false"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="CA 1"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:paddingTop="8dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/flipkartCard"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="28sp"
+                app:cardBackgroundColor="@color/darkCard"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageButton
+                        android:id="@+id/flipkartButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/flipkartapplogo"
+                        android:scaleType="fitCenter"
+                        android:clickable="false"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Flipkart"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:paddingTop="8dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/snackbarCard"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="28sp"
+                app:cardBackgroundColor="@color/darkCard"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageButton
+                        android:id="@+id/snackbarButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/snackbar_logo"
+                        android:scaleType="fitCenter"
+                        android:clickable="false"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Snackbar"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:paddingTop="8dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lpuDepartmentsCard"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="28sp"
+                app:cardBackgroundColor="@color/darkCard"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageButton
+                        android:id="@+id/lpuDepartmentsButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:padding="20sp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/lpulogo"
+                        android:scaleType="fitCenter"
+                        android:clickable="false"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="LPU"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:paddingTop="8dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/foodiblesCard"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="28sp"
+                app:cardBackgroundColor="@color/darkCard"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageButton
+                        android:id="@+id/foodiblesButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:padding="20sp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/foodibleslogo"
+                        android:scaleType="fitCenter"
+                        android:clickable="false"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Foodibles"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:paddingTop="8dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </GridLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="Made by Yousuf"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+
+
+</LinearLayout>

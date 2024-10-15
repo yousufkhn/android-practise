@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidClassApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".menubar.MenuBar"
+            android:exported="false" />
+        <activity
+            android:name=".foodibles.Foodibles"
+            android:exported="false" />
+        <activity
+            android:name=".implicit.Implicit"
+            android:exported="true" />
+        <activity
+            android:name=".lpuapp.DepartmentDetails"
+            android:exported="false" />
+        <activity
+            android:name=".lpuapp.LpuHome"
+            android:exported="false" />
+        <activity
+            android:name=".snackbar.SnackbarHome"
+            android:exported="true" />
+        <activity
+            android:name=".flowerapp.OrderSuccessPage"
+            android:exported="false" />
+        <activity
+            android:name=".flowerapp.FlowerCartPage"
+            android:exported="false" />
+        <activity
+            android:name=".flipkart.FlipkartHome"
+            android:exported="false" />
+        <activity
+            android:name=".flipkart.FlipkartMain"
+            android:exported="false" />
+        <activity
+            android:name=".ca1.CA1"
+            android:exported="true" />
+        <activity
+            android:name=".spinnerapp.SpinnerApp"
+            android:exported="true" />
+        <activity
+            android:name=".flowerapp.FlowerShopPage"
+            android:exported="false" />
+        <activity
+            android:name=".flowerapp.WelcomePage"
+            android:exported="false" />
+        <activity
+            android:name=".pizza.pizzasucess"
+            android:exported="false" />
+        <activity
+            android:name=".pizza.PizzaApp"
+            android:exported="false" />
+        <activity
+            android:name=".calculator.CalculatorApp"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/flowerPageBackground"
+    >
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieMothersDay"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:lottie_rawRes="@raw/order_success_lottie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ordered Successfully!"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textSize="24sp"
+        android:fontFamily="@font/rimouski"
+        android:textColor="@color/black"
+
+        />
+</LinearLayout>

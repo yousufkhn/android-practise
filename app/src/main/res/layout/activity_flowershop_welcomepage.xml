@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/flowerPageBackground"
+        android:paddingTop="100dp"
+        >
+
+        <TextView
+            android:id="@+id/welcomeUpperText"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Welcome to"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/flowerfont2"
+            />
+
+        <TextView
+            android:id="@+id/welcomeLowerText"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:fontFamily="@font/flowerfont"
+            android:text="Flower Shop"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeUpperText" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/flowerImage"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeLowerText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:lottie_rawRes="@raw/flowerlottie"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/layoutid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/rounder_grid_flowerapp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/layout2id"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flowerImage">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/flowerfont2"
+            android:text="Get the Best Deals on"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/flowerfont2"
+            android:text="Heavenly Fresh Flowers"
+            android:textColor="#e35573"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/flowerfont2"
+            android:text="World Wide Delivery in 8-10 days"
+            android:textColor="@color/darkCard"
+            android:textSize="12sp"
+            android:paddingVertical="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/layout2id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/white"
+            >
+
+            <Button
+                android:id="@+id/buyNowButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:text="Buy Now"
+                android:backgroundTint="#e35573"
+                android:layout_margin="16dp"
+
+                />
+    </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

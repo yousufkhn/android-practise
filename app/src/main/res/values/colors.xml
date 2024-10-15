@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark">#050c1c</color>
+    <color name="darkCard">#141b25</color>
+    <color name="teal">#e7faf8</color>
+    <color name="flowerPageBackground">#f8e3e8</color>
+    <color name="flowerapp_search_bg_color">#ecf0ef</color>
+    <color name="flowerapp_homepage_promotional_card_bg_color">#fae1e5</color>
+    <color name="flowerapp_quantity_button">#e35573</color>
+    <color name="lpuOrange">#f7862a</color>
+    <color name="lpuCardColor">#fbfbfb</color>
+
+
+    #f8dfe2
+</resources>
