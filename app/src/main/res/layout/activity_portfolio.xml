@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#fef5fa"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+
+    >
+
+<!--    <Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:title="Good morning"-->
+<!--        android:background="#24314a"-->
+<!--        android:titleTextColor="@color/white"-->
+<!--        />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/portfolio_top_card"
+        android:layout_margin="8dp"
+
+        >
+
+        <ImageButton
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@drawable/portfolio_avatar"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Muhammad Yousuf"
+            android:textColor="@color/black"
+            android:fontFamily="@font/rimouski"
+            android:textSize="24sp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="&#64;muhammadyousufkhan"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅 01 December 2004      \n 📱 Android Developer         \n 📍 Jalandhar, Punjab, India"
+            android:textColor="@color/black"
+            android:fontFamily="@font/rimouski"
+            android:padding="18dp"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4sp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:columnCount="2"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/linkedinCard"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="2"
+                    android:layout_height="150dp"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="20sp"
+                    app:cardBackgroundColor="#0a66c2"
+                    android:clickable="true"
+                    android:focusable="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/linkedinButton"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:background="@android:color/transparent"
+                                app:srcCompat="@drawable/linkedin_logo"
+                                android:scaleType="fitCenter"
+                                android:clickable="false"
+                                android:layout_margin="12dp"
+                                />
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"/>
+
+                            <ImageButton
+                                android:id="@+id/linkButton"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:background="@android:color/transparent"
+                                app:srcCompat="@drawable/link_logo"
+                                android:scaleType="fitCenter"
+                                android:clickable="false"
+                                android:layout_margin="12dp"
+                                />
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Linkedin"
+                            android:fontFamily="@font/rimouski"
+                            android:layout_marginHorizontal="12dp"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/white"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="muhammadyousufkhan"
+                            android:fontFamily="@font/rimouski"
+                            android:layout_marginHorizontal="12dp"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/white"/>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                android:id="@+id/leetcodeCard"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="150dp"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="20sp"
+                app:cardBackgroundColor="#3c2d4d"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingVertical="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/leetcodeButton"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/leetcode_logo"
+                            android:scaleType="fitCenter"
+                            android:clickable="false"
+                            android:layout_margin="12dp"
+                            />
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"/>
+
+                        <ImageButton
+                            android:id="@+id/leetcodeLinkButton"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/link_logo"
+                            android:scaleType="fitCenter"
+                            android:clickable="false"
+                            android:layout_marginVertical="12dp"
+                            android:layout_marginHorizontal="12dp"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leetcode"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginHorizontal="12dp"
+                        android:fontFamily="@font/rimouski"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="kyousuf14"
+                        android:fontFamily="@font/rimouski"
+                        android:layout_marginHorizontal="12dp"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/githubCard"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="4dp"
+                app:cardCornerRadius="20sp"
+                app:cardBackgroundColor="#0d1117"
+                android:clickable="true"
+                android:focusable="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/githubButton"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/github_logo"
+                            android:scaleType="fitCenter"
+                            android:clickable="false"
+                            android:layout_margin="12dp"
+                            />
+<!--                        <View-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="0dp"-->
+<!--                            android:layout_weight="1"/>-->
+                        <ImageButton
+                            android:id="@+id/githubContributionButton"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/github_contribution"
+                            android:scaleType="fitCenter"
+                            android:clickable="false"
+                            />
+
+
+                        <ImageButton
+                            android:id="@+id/githubLinkButton"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@android:color/transparent"
+                            app:srcCompat="@drawable/link_logo"
+                            android:scaleType="fitCenter"
+                            android:clickable="false"
+                            android:layout_margin="12dp"
+                            />
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GitHub"
+                        android:fontFamily="@font/rimouski"
+                        android:layout_marginHorizontal="12dp"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="&#64;yousufkhn"
+                        android:fontFamily="@font/rimouski"
+                        android:layout_marginHorizontal="12dp"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/white"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/academicsCard"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_height="170dp"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="20sp"
+                    app:cardBackgroundColor="#f4c2c2"
+                    android:clickable="true"
+                    android:focusable="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/academicsButton"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:background="@android:color/transparent"
+                                app:srcCompat="@drawable/academics_logo"
+                                android:scaleType="fitCenter"
+                                android:clickable="false"
+                                android:layout_margin="12dp"
+                                />
+
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Academics"
+                            android:fontFamily="@font/rimouski"
+                            android:layout_marginHorizontal="12dp"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="8.46 CGPA"
+                            android:fontFamily="@font/rimouski"
+                            android:layout_marginHorizontal="12dp"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"/>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/certificatesCard"
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_height="170dp"
+                    android:layout_margin="4dp"
+                    app:cardCornerRadius="20sp"
+                    app:cardBackgroundColor="#f4c2c2"
+                    android:clickable="true"
+                    android:focusable="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/certificatesButton"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:background="@android:color/transparent"
+                                app:srcCompat="@drawable/certificate_logo"
+                                android:scaleType="fitCenter"
+                                android:clickable="false"
+                                android:layout_margin="12dp"
+                                />
+
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Certifications"
+                            android:fontFamily="@font/rimouski"
+                            android:layout_marginHorizontal="12dp"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:fontFamily="@font/rimouski"
+                            android:layout_marginHorizontal="12dp"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:textColor="@android:color/black"/>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Projects"
+                android:fontFamily="@font/rimouski"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginVertical="8dp"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

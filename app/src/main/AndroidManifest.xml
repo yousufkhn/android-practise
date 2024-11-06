@@ -13,6 +13,21 @@
         android:theme="@style/Theme.AndroidClassApp"
         tools:targetApi="31">
         <activity
+            android:name=".dialogs.DialogBox"
+            android:exported="true" />
+        <activity
+            android:name=".portfolio.Academics"
+            android:exported="false" />
+        <activity
+            android:name=".ca2.WelcomePage"
+            android:exported="false" />
+        <activity
+            android:name=".ca2.CA2"
+            android:exported="true" />
+        <activity
+            android:name=".portfolio.Portfolio"
+            android:exported="true" />
+        <activity
             android:name=".menubar.MenuBar"
             android:exported="true" />
         <activity

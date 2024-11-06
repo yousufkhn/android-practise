@@ -5,12 +5,14 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidclassapp.ca1.CA1
+import com.example.androidclassapp.ca2.CA2
 import com.example.androidclassapp.calculator.CalculatorApp
 import com.example.androidclassapp.flipkart.FlipkartMain
 import com.example.androidclassapp.flowerapp.WelcomePage
 import com.example.androidclassapp.foodibles.Foodibles
 import com.example.androidclassapp.lpuapp.LpuHome
 import com.example.androidclassapp.pizza.PizzaApp
+import com.example.androidclassapp.portfolio.Portfolio
 import com.example.androidclassapp.snackbar.SnackbarHome
 import com.example.androidclassapp.spinnerapp.SpinnerApp
 
@@ -29,6 +31,8 @@ class MainActivity : AppCompatActivity() {
         val snackbarCard = findViewById<androidx.cardview.widget.CardView>(R.id.snackbarCard)
         val lpuCard = findViewById<androidx.cardview.widget.CardView>(R.id.lpuDepartmentsCard)
         val foodiblesCard = findViewById<androidx.cardview.widget.CardView>(R.id.foodiblesCard)
+        val ca2Card = findViewById<androidx.cardview.widget.CardView>(R.id.ca2Card)
+        val portfolioCard = findViewById<androidx.cardview.widget.CardView>(R.id.portfolioCard)
 
         calculatorCard.setOnClickListener {
             val intent = Intent(this, CalculatorApp::class.java)
@@ -68,6 +72,15 @@ class MainActivity : AppCompatActivity() {
         }
         foodiblesCard.setOnClickListener {
             val intent = Intent(this, Foodibles::class.java)
+            startActivity(intent)
+        }
+
+        ca2Card.setOnClickListener {
+            val intent = Intent(this, CA2::class.java)
+            startActivity(intent)
+        }
+        portfolioCard.setOnClickListener {
+            val intent = Intent(this, Portfolio::class.java)
             startActivity(intent)
         }
 
