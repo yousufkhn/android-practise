@@ -3,6 +3,7 @@ package com.example.androidclassapp.portfolio
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidclassapp.R
@@ -39,6 +40,23 @@ class Portfolio : AppCompatActivity() {
         academicsCard.setOnClickListener {
             val intent = Intent(this, Academics::class.java)
             startActivity(intent)
+        }
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.action_exit -> {
+                finish()
+                true
+            }
+            android.R.id.home -> {
+                onBackPressed()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
     }
 }

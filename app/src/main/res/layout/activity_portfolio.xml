@@ -7,17 +7,14 @@
     android:layout_width="match_parent"
     android:background="#fef5fa"
     android:orientation="vertical"
-    android:paddingTop="16dp"
 
     >
 
-<!--    <Toolbar-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:title="Good morning"-->
-<!--        android:background="#24314a"-->
-<!--        android:titleTextColor="@color/white"-->
-<!--        />-->
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:titleTextColor="@color/white"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"

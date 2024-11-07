@@ -20,7 +20,7 @@ class DialogBox : AppCompatActivity() {
 
         subscribeBtn.setOnClickListener {
             val layout = layoutInflater.inflate(R.layout.custom_alert, null)
-            val emailEditText = layout.findViewById<EditText>(R.id.emailBox)
+//            val emailEditText = layout.findViewById<EditText>(R.id.emailBox)
 
             val alertBuilder = AlertDialog.Builder(this)
             alertBuilder.setTitle("Subscribe")
@@ -36,24 +36,24 @@ class DialogBox : AppCompatActivity() {
             dialog.show()
 
             dialog.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener {
-                val email = emailEditText.text.toString()
+//                val email = emailEditText.text.toString()
 
-                if (email.isEmpty()) {
-
-                    Toast.makeText(this, "Please enter an email address.", Toast.LENGTH_SHORT).show()
-                } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-
-                    Toast.makeText(this, "Please enter a valid email address.", Toast.LENGTH_SHORT).show()
-                } else {
-
-                    Toast.makeText(this, "Subscribed with: $email", Toast.LENGTH_SHORT).show()
-                    dialog.dismiss()
+//                if (email.isEmpty()) {
+//
+//                    Toast.makeText(this, "Please enter an email address.", Toast.LENGTH_SHORT).show()
+//                } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+//
+//                    Toast.makeText(this, "Please enter a valid email address.", Toast.LENGTH_SHORT).show()
+//                } else {
+//
+//                    Toast.makeText(this, "Subscribed with: $email", Toast.LENGTH_SHORT).show()
+//                    dialog.dismiss()
                 }
             }
         }
 
-        ratingBar.setOnRatingBarChangeListener { _, rating, _ ->
-            Toast.makeText(this, "Rating: $rating", Toast.LENGTH_SHORT).show()
-        }
+//        ratingBar.setOnRatingBarChangeListener { _, rating, _ ->
+//            Toast.makeText(this, "Rating: $rating", Toast.LENGTH_SHORT).show()
+//        }
     }
-}
+//}
